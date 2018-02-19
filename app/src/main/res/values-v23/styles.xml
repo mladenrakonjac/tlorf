@@ -1,0 +1,10 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/backgroundDark3</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:breakStrategy">simple</item>
+    </style>
+
+</resources>

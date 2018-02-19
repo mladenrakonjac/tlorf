@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="state">state</string>
+    <string name="glasses">Glasses</string>
+    <string name="glassOne">glass 1</string>
+    <string name="glassTwo">glass 2</string>
+    <string name="glassThree">glass 3</string>
+    <string name="fragrance">Fragrance</string>
+    <string name="position">Position</string>
+    <string name="curtain">Curtain</string>
+    <string name="clock">Clock</string>
+    <string name="lights">Lights</string>
+    <string name="lights_bri">Bri</string>
+    <string name="lights_color_mode">Color Mode</string>
+    <string name="lights_ct">Ct</string>
+    <string name="lights_effect">Effect</string>
+    <string name="lights_hue">Hue</string>
+    <string name="lights_mode">Mode</string>
+    <string name="lights_on">Is turn on?</string>
+    <string name="lights_reachable">Is reachable?</string>
+    <string name="lights_sat">Saturation</string>
+    <string name="lights_x">X position</string>
+    <string name="lights_y">Y position</string>
+    <string name="printer">Printer</string>
+    <string name="seats">Seats</string>
+    <string name="seatOne">Seat 1</string>
+    <string name="seatTwo">Seat 2</string>
+    <string name="seatThree">Seat 3</string>
+    <string name="uv_lights">UV Lights</string>
+
+</resources><!-- THIS SHOULD NOT BE EDIT, THIS SHOULD BE EXACTLY SAME COPY FROM FIRST LANG STRINGS-->

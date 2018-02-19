@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="valueOfItem"
+            type="String" />
+
+        <variable
+            name="nameOfItem"
+            type="String" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        tools:showIn="@layout/fragment_home_battle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_height"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:gravity="center_vertical"
+            android:text="@{nameOfItem}"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="@dimen/item_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:text="@{valueOfItem}"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="@dimen/item_text_size" />
+
+    </RelativeLayout>
+
+</layout>

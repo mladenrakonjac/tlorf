@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="me.factliverpool.tlrof.app.home.homebattle.HomeViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/or_accept_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@color/backgroundDark1">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/app_name"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/bolded_item"
+                    bind:nameOfItem="@{@string/clock}" />
+
+                <include
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/state}"
+                    bind:valueOfItem="@{viewModel.clockState}" />
+
+                <include layout="@layout/line" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroundDark2"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/bolded_item"
+                    bind:nameOfItem="@{@string/curtain}" />
+
+                <include
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/state}"
+                    bind:valueOfItem="@{viewModel.curtainState}" />
+
+                <include
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/position}"
+                    bind:valueOfItem="@{viewModel.curtainPosition}" />
+
+                <include layout="@layout/line" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/bolded_item"
+                    bind:nameOfItem="@{@string/fragrance}" />
+
+                <include
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/state}"
+                    bind:valueOfItem="@{viewModel.fragranceState}" />
+
+                <include layout="@layout/line" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroundDark2"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/bolded_item"
+                    bind:nameOfItem="@{@string/glasses}" />
+
+                <include
+                    android:id="@+id/glass1"
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/glassOne}"
+                    bind:valueOfItem="@{viewModel.glassOneState}" />
+
+                <include
+                    android:id="@+id/glass2"
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/glassTwo}"
+                    bind:valueOfItem="@{viewModel.glassTwoState}" />
+
+                <include
+                    android:id="@+id/glass3"
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/glassThree}"
+                    bind:valueOfItem="@{viewModel.glassThreeState}" />
+
+                <include layout="@layout/line" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/bolded_item"
+                    bind:nameOfItem="@{@string/lights}" />
+
+                <include
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/lights_bri}"
+                    bind:valueOfItem="@{viewModel.lightBriState}" />
+
+                <include
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/lights_color_mode}"
+                    bind:valueOfItem="@{viewModel.lightColorMode}" />
+
+                <include
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/lights_ct}"
+                    bind:valueOfItem="@{viewModel.lightCt}" />
+
+
+                <include
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/lights_effect}"
+                    bind:valueOfItem="@{viewModel.lightEffect}" />
+
+                <include
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/lights_hue}"
+                    bind:valueOfItem="@{viewModel.lightHue}" />
+
+                <include
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/lights_mode}"
+                    bind:valueOfItem="@{viewModel.lightMode}" />
+
+                <include
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/lights_on}"
+                    bind:valueOfItem="@{viewModel.lightOn}" />
+
+                <include
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/lights_reachable}"
+                    bind:valueOfItem="@{viewModel.lightReachable}" />
+
+                <include
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/lights_sat}"
+                    bind:valueOfItem="@{viewModel.lightSat}" />
+
+                <include
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/lights_x}"
+                    bind:valueOfItem="@{viewModel.lightX}" />
+
+                <include
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/lights_y}"
+                    bind:valueOfItem="@{viewModel.lightY}" />
+
+                <include layout="@layout/line" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroundDark2"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/bolded_item"
+                    bind:nameOfItem="@{@string/printer}" />
+
+                <include
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/state}"
+                    bind:valueOfItem="@{viewModel.printerState}" />
+
+                <include layout="@layout/line" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/bolded_item"
+                    bind:nameOfItem="@{@string/seats}" />
+
+                <include
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/seatOne}"
+                    bind:valueOfItem="@{viewModel.seatOneState}" />
+
+                <include
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/seatTwo}"
+                    bind:valueOfItem="@{viewModel.seatTwoState}" />
+
+                <include
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/seatThree}"
+                    bind:valueOfItem="@{viewModel.seatThreeState}" />
+
+                <include layout="@layout/line" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroundDark2"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/bolded_item"
+                    bind:nameOfItem="@{@string/uv_lights}" />
+
+                <include
+                    layout="@layout/singleitem"
+                    bind:nameOfItem="@{@string/state}"
+                    bind:valueOfItem="@{viewModel.seatOneState}" />
+
+                <include layout="@layout/line" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</layout>
