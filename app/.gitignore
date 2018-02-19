@@ -56,3 +56,4 @@ freeline_project_description.json
 !/src/production/google-services.json
 !/src/staging/google-services.json
 /fabric.properties
+/src/finalProduction/google-services.json

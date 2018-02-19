@@ -57,3 +57,4 @@ freeline_project_description.json
 !/app/src/production/google-services.json
 /.circleci/
 /fastlane/
+/app/src/local/google-services.json
