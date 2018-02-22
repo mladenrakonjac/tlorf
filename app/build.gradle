@@ -63,23 +63,31 @@ android {
 
     productFlavors {
 
-        finalProduction {
+        controller {
             dimension "default"
-            resValue "string", "app_name", "TLROF remote"
+            applicationIdSuffix ".controller"
+            resValue "string", "app_name", "TLROF controller"
             buildConfigField 'String', 'SERVERURL', '"nothingfornow"'
             buildConfigField 'String', 'FIREBASE_BASE', '"states"'
 
         }
 
-        local {
+        monitor {
             dimension "default"
-            applicationIdSuffix ".local"
-            resValue "string", "app_name", "TLROF local"
+            applicationIdSuffix ".monitor"
+            resValue "string", "app_name", "TLROF monitor"
             buildConfigField 'String', 'SERVERURL', '"nothingfornow"'
-            buildConfigField 'String', 'FIREBASE_BASE', '"states"'
-
-
+            buildConfigField 'String', 'FIREBASE_BASE', '"hdimsgs"'
         }
+
+        clock {
+            dimension "default"
+            applicationIdSuffix ".clock"
+            resValue "string", "app_name", "TLROF clock"
+            buildConfigField 'String', 'SERVERURL', '"nothingfornow"'
+            buildConfigField 'String', 'FIREBASE_BASE', '"clock"'
+        }
+
     }
 
     dataBinding {
