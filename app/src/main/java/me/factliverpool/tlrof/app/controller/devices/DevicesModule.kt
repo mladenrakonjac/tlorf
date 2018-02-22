@@ -1,4 +1,4 @@
-package me.factliverpool.tlrof.app.home.homebattle
+package me.factliverpool.tlrof.app.controller.devices
 
 import android.arch.lifecycle.ViewModel
 import dagger.Binds
@@ -8,13 +8,13 @@ import dagger.multibindings.IntoMap
 import me.factliverpool.tlrof.injection.ViewModelKey
 
 @Module
-internal abstract class HomeSubModule {
+internal abstract class DevicesModule {
 
     @ContributesAndroidInjector
-    internal abstract fun homeBattleFragment(): HomeFragment
+    internal abstract fun homeBattleFragment(): DevicesFragment
 
     @Binds
     @IntoMap
-    @ViewModelKey(HomeViewModel::class)
-    abstract fun bindMainViewModel(viewModel: HomeViewModel): ViewModel
+    @ViewModelKey(DevicesViewModel::class)
+    abstract fun bindMainViewModel(viewModel: DevicesViewModel): ViewModel
 }

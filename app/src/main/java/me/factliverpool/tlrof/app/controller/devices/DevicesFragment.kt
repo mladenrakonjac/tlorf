@@ -1,4 +1,4 @@
-package me.factliverpool.tlrof.app.home.homebattle
+package me.factliverpool.tlrof.app.controller.devices
 
 import android.arch.lifecycle.ViewModelProvider
 import android.arch.lifecycle.ViewModelProviders
@@ -9,29 +9,29 @@ import android.view.View
 import android.view.ViewGroup
 import me.factliverpool.tlrof.R
 import me.factliverpool.tlrof.custom.baselca.BaseFragment
-import me.factliverpool.tlrof.databinding.FragmentHomeBattleBinding
+import me.factliverpool.tlrof.databinding.FragmentDevicesBinding
 import javax.inject.Inject
 
-class HomeFragment @Inject constructor() : BaseFragment() {
+class DevicesFragment @Inject constructor() : BaseFragment() {
 
-    private lateinit var binding: FragmentHomeBattleBinding
+    private lateinit var binding: FragmentDevicesBinding
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
-    private lateinit var viewModel: HomeViewModel
+    private lateinit var viewModel: DevicesViewModel
 
 
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
 
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home_battle, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_devices, container, false)
         return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        viewModel = ViewModelProviders.of(this, viewModelFactory).get(HomeViewModel::class.java)
+        viewModel = ViewModelProviders.of(this, viewModelFactory).get(DevicesViewModel::class.java)
         binding.viewModel = viewModel
         binding.executePendingBindings()
         handleNoInternetConnection(viewModel)

@@ -2,7 +2,7 @@ package me.factliverpool.tlrof
 
 import android.support.test.rule.ActivityTestRule
 import android.support.test.runner.AndroidJUnit4
-import me.factliverpool.tlrof.app.home.HomeActivity
+import me.factliverpool.tlrof.app.controller.ControllerActivity
 import org.junit.Rule
 import org.junit.runner.RunWith
 
@@ -17,7 +17,7 @@ class ExampleInstrumentedTest {
 
     @Rule
     @JvmField
-    val activity = ActivityTestRule<HomeActivity>(HomeActivity::class.java)
+    val activity = ActivityTestRule<ControllerActivity>(ControllerActivity::class.java)
 
 
 

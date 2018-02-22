@@ -1,4 +1,4 @@
-package me.factliverpool.tlrof.app.home
+package me.factliverpool.tlrof.app.controller
 
 /**
  * Created by mladenrakonjac on 12/12/2017.

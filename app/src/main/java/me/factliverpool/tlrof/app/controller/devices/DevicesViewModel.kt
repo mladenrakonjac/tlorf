@@ -1,4 +1,4 @@
-package me.factliverpool.tlrof.app.home.homebattle
+package me.factliverpool.tlrof.app.controller.devices
 
 import android.databinding.ObservableField
 import com.google.firebase.database.DataSnapshot
@@ -6,15 +6,15 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ValueEventListener
 import me.factliverpool.tlrof.androidmanagers.PreferencesManager
-import me.factliverpool.tlrof.app.home.RoomState
+import me.factliverpool.tlrof.app.controller.RoomState
 import me.factliverpool.tlrof.custom.baselca.BaseViewModel
 import javax.inject.Inject
 
 /**
  * Created by Mladen Rakonjac on 8/26/17.
  */
-internal class HomeViewModel @Inject constructor(val fbDbRef: DatabaseReference,
-                                                 private val preferencesManager: PreferencesManager) : BaseViewModel() {
+internal class DevicesViewModel @Inject constructor(val fbDbRef: DatabaseReference,
+                                                    private val preferencesManager: PreferencesManager) : BaseViewModel() {
 
     var clockState = ObservableField("no_state")
     var curtainState = ObservableField("no_state")

@@ -5,4 +5,4 @@
     android:layout_height="0dp"
     android:layout_marginTop="32dp"
     android:background="@color/backgroundDark4"
-    tools:showIn="@layout/fragment_home_battle" />
+    tools:showIn="@layout/fragment_devices" />

@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:paddingTop="32dp"
-        tools:showIn="@layout/fragment_home_battle">
+        tools:showIn="@layout/fragment_devices">
 
         <TextView
             android:layout_width="wrap_content"

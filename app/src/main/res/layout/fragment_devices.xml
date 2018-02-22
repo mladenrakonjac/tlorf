@@ -8,7 +8,7 @@
 
         <variable
             name="viewModel"
-            type="me.factliverpool.tlrof.app.home.homebattle.HomeViewModel" />
+            type="me.factliverpool.tlrof.app.controller.devices.DevicesViewModel" />
     </data>
 
     <ScrollView

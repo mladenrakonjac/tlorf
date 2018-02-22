@@ -4,7 +4,7 @@ import dagger.Component
 import dagger.android.AndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule
 import me.factliverpool.tlrof.TlotfApp
-import me.factliverpool.tlrof.app.home.HomeModule
+import me.factliverpool.tlrof.app.controller.ControllerModule
 import me.factliverpool.tlrof.injection.AppModule
 import me.factliverpool.tlrof.injection.ViewModelBuilder
 import javax.inject.Singleton
@@ -18,7 +18,7 @@ import javax.inject.Singleton
         modules = [(AndroidSupportInjectionModule::class),
         (AppModule::class),
         (ViewModelBuilder::class),
-        (HomeModule::class)])
+        (ControllerModule::class)])
 interface AppComponent : AndroidInjector<TlotfApp> {
 
     @Component.Builder
