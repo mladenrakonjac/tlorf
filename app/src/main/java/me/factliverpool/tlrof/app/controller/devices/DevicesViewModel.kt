@@ -1,10 +1,7 @@
 package me.factliverpool.tlrof.app.controller.devices
 
 import android.databinding.ObservableField
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.*
 import me.factliverpool.tlrof.androidmanagers.PreferencesManager
 import me.factliverpool.tlrof.app.controller.RoomState
 import me.factliverpool.tlrof.custom.baselca.BaseViewModel
@@ -95,6 +92,10 @@ internal class DevicesViewModel @Inject constructor(val fbDbRef: DatabaseReferen
         fbDbRef.removeEventListener(valueEventListener)
         super.onCleared()
 
+    }
+
+    fun showEnjoyYourDrink(){
+        FirebaseDatabase.getInstance().getReference("hdimsgs").child("enjoydring").setValue(true)
     }
 
 }

@@ -138,6 +138,13 @@
                     bind:nameOfItem="@{@string/glassThree}"
                     bind:valueOfItem="@{viewModel.glassThreeState}" />
 
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enjoy_your_drink"
+                    android:layout_margin="16dp"
+                    android:onClick="@{ () -> viewModel.showEnjoyYourDrink()}"/>
+
                 <include layout="@layout/line" />
 
             </LinearLayout>
